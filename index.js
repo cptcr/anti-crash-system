@@ -12,10 +12,6 @@ process.on('uncaughtExceptionMonitor', (err, origin) => {
     console.log("Uncaught Exception Monitor:", err, origin);
 });
 
-process.on('multipleResolves', (err) => {
-    console.log('Multiple Resolves:', err);
-})
-
 process.on('rejectionHandled', (err) => {
     console.log("rejected handled:", err);
 })
